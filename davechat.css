@@ -1,2 +1,183 @@
 //META{"name":"daveChat","description":"Stable timeloops are for the weak.","author":"Yay899","version":"0.1"}*//
 
+/* ===================================
+	Style changes.
+=================================== */
+
+/* Messages box. */
+
+.messages {
+	background-color: #FFFFFF;
+	border-style: solid;
+	border-width: 3px;
+	border-color: #C48A01;
+	padding: 2px;
+}
+
+.messages-wrapper {
+	background-color: #FCB301;
+	padding: 5px;
+}
+
+/* Text area. */
+
+.channel-textarea-inner {
+	background-color: #FFFFFF;
+	border-style: solid;
+	border-width: 3px;
+	border-color: #C48A01;
+	border-radius: 0px;
+	margin: -25px;
+	margin-left: 0px;
+	margin-right: 0px;
+	padding: 2px;
+}
+
+.chat form {
+	background-color: #FCB301;
+	padding: 5px;
+	margin: 0px;
+	box-shadow: 0 0px 0 rgba(0,0,0,0);
+}
+
+.channel-textarea-upload {
+	display: none;
+}
+
+.channel-textarea-emoji {
+	display: none;
+}
+
+/* Members box. */
+
+.channel-members {
+	background-color: #FFFFFF;
+	border-style: solid;
+	border-width: 3px;
+	border-color: #C48A01;
+	padding: 2px;
+}
+
+.channel-members-wrap {
+	background-color: #FCB301;
+	padding: 5px;
+}
+
+/* Channel List. */
+
+.guild-channels {
+	background-color: #000000;
+	border-style: solid;
+	border-width: 3px;
+	border-color: #EFEE83;
+	margin-top: 10px;
+	padding: 2px;
+}
+
+.channels-wrap {
+	background-color: #FCB301;
+	padding: 5px;
+}
+
+.unread:before {
+	visibility: hidden;
+}
+
+.channel-name {
+	color: #FFFFFF;
+}
+
+.channel-name:before {
+	color: #FFFFFF
+}
+
+/* Typing message. */
+
+.typing{
+	display: none;
+}
+
+/* Account box. */
+
+.account {
+	background-color: #000000;
+	border-style: solid;
+	border-width: 3px;
+	border-color: #EFEE83;
+	padding: 2px;
+    margin-top: 10px;
+}
+
+/* Server name. */
+
+.guild-header {
+	background-color: #000000;
+	border-style: solid;
+	border-width: 3px;
+	border-color: #EFEE83;
+	padding: 2px;
+    margin-top: 10px;
+}
+
+.guild-header header {
+	background-color: inherit;
+}
+
+/* Title Bar. */
+
+.title-wrap {
+	background-color: #FCB301;
+}
+
+/* ===================================
+	Text replacements.
+=================================== */
+
+
+/* Replace usernames in chat. */
+
+.user-name {
+	display: none;
+}
+
+.body .username-wrapper:after {
+	content: 'turntechGodhead';
+	color: #E00707;
+}
+
+/* Replace timestamp. */
+
+.timestamp {
+	visibility: hidden;
+}
+
+.timestamp:before {
+	visibility: visible;
+	content: '413 hours in the future';
+}
+
+/* Replace usernames in userlist. */
+
+.member-username-inner {
+	display: none;
+}
+
+.member-inner .member-username:after {
+	content: 'turntechGodhead';
+	color: #E00707;
+}
+
+.bot-tag {
+	display: none;
+}
+
+/* Replace playing status. */
+
+.member-activity strong {
+	display: none;
+}
+
+.member-activity:after {
+	font-weight: bold;
+	content: 'some sick beats';
+}
